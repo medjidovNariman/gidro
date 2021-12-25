@@ -336,3 +336,55 @@ body{
   margin-left: -3px;
   cursor: pointer;
 }
+
+.categories__inner{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap; 
+}
+.categories__item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 370px;
+  padding: 20px 20px 16px;
+  transition: border-color ease .3s;
+}
+.categories__item-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+.categories__item-img{
+  text-align: center;
+  width: 50%;
+}
+.categories__item-img img{
+  max-width: 100%;
+}
+.categories__item-title{
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 28px;
+  transition: all .3s;
+}
+.categories__item:hover{
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  border-color: transparent
+}
+.categories__item:hover .categories__item-title{
+  color: #1C62CD;
+}
+.categories__item-text{
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+.categories__item-text::after{
+  content: url('../images/link-arrow.svg');
+  padding-left: 2px;
+}
